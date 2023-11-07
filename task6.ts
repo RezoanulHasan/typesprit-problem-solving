@@ -1,3 +1,5 @@
+//Write a TypeScript function that takes a parameter of type unknown and uses a type guard to check whether the parameter is an array of numbers. If it is, calculate the sum of the numbers and log it. If it's not, log an error message
+
 function isArrayOfNumbers(value: unknown): value is number[] {
     return Array.isArray(value) && value.every(item => typeof item === 'number');
 }
